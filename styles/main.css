@@ -1,15 +1,15 @@
 body {
   width: auto;
   margin: 0 auto;
-  background-color: #000;
+  background-color: #000; 
 }
 
 header {
   position: fixed; 
-  z-index: 1;
+  z-index: 111;
   padding: 15px;
   text-align: right;
-  background-color: black;
+  background-color: #000;
 }
 
 p, a {
@@ -61,7 +61,7 @@ nav ul li a:focus, footer a:focus, #projects a:focus {
 #intro {
   text-align: left;
   background-color: #fff; 
-  background-image: url('images/prog.png'); 
+  background-image: url('../images/prog.png'); 
   background-size: 48%;
   background-position: 600px;
   background-repeat: no-repeat;
@@ -91,7 +91,6 @@ nav ul li a:focus, footer a:focus, #projects a:focus {
   top: 366px;
   left: -60px;
 }
-
 
 #intro p .lineBreak {
   line-height: 1.5; 
