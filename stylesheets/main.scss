@@ -1,0 +1,365 @@
+@import "bourbon/bourbon";
+@import "neat/neat"; // bourbon grid
+@import "base/base"; // bourbon bitters
+@import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono|Share+Tech|Source+Code+Pro);
+
+$default_color: #F1F1F1;
+$link_color: #428bca;
+$default_font_size: 1.15rem;
+$content_background_color: #F1F1F1;
+
+body {
+  background-color: #000;
+  color: $default_color;
+  // font-family: 'Share Tech Mono';
+  // font-family: 'Share Tech', sans-serif;
+  font-family: 'Source Code Pro';
+}
+
+p, a {
+  font-size: $default_font_size;
+}
+
+header {
+  height: 5rem;
+  nav {
+    position: fixed;
+    width: 100%; 
+    z-index: 111;
+    @include outer-container(100%);
+    @include padding(1rem);
+    @include border-style(null null solid);
+    @include border-color(null null $default_color);
+    @include border-width(null null 1px);
+    background-color: #000;
+      ul li {
+        list-style: none;
+        display: inline;
+        @include padding(0 1rem)
+    } a {
+        text-transform: uppercase;
+        color: $default_color;
+        font-size: 2rem;
+    } #contact_nav_link {
+        float: right;
+        margin-right: 1rem;
+    }
+  }
+}
+
+
+nav ul li a:hover, footer a:hover {
+  color: $link_color;
+  text-decoration: none;
+}
+
+// HOMEPAGE begin
+#homepage_container {
+  #intro {
+    @include pad;
+    background-image: url('../images/comp-grey-background-1920x1280.jpg'); 
+    background-size: cover;
+    background-position: 0rem -5rem;
+    background-repeat: no-repeat;
+    height: 45rem;
+      p {
+      @include margin(6rem 31rem);
+      @include span-columns(5);
+      font-size: 1.75rem;
+      color: $link_color;
+      }
+  }
+}
+
+.sectionTitle {
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+#projects {
+  @include outer-container;
+  @include pad;
+  height: 52rem;
+  padding-top: 5rem;
+  a {
+    text-transform: uppercase;
+    color: $link_color;
+    font-size: 1.5rem;
+  } #moreProjectsLink {
+      text-decoration: none;
+      float: right;
+      margin: 3rem;
+      color: $link_color;
+  } #moreProjectsLink:hover {
+      text-decoration: underline;
+  }
+}
+
+
+// Project Hover Tiles
+#projects .project_overflow_link {
+  position: relative;
+  left: 10em;
+}
+.project_overflow_link:hover {
+  text-decoration: underline;
+  }
+
+#projects .hover-tile-outer1 {
+  @include span-columns(7);
+  @include omega;
+  background: url("../images/placeholder_billmurray_460x300.jpg");
+  background-position: top;
+  background-size: cover;
+ .project_overflow_link {
+    position: relative;
+    left: 18em;
+  }
+}
+#projects .hover-tile-outer2 {
+  @include span-columns(5);
+  background: url("../images/placeholder_billmurray_300x200.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+#projects .hover-tile-outer3 {
+  @include span-columns(5);
+  @include omega;
+  background: url("../images/placeholder_billmurray_300x200.jpg");
+  background-position: top;
+  background-size: cover;
+}
+
+#projects .hover-tile-outer4 {
+  @include span-columns(7);
+  background: url("../images/placeholder_billmurray_460x300.jpg");
+  background-position: top;
+  background-size: cover;
+  .project_overflow_link {
+    position: relative;
+    left: 18em;
+  }
+}
+
+.hover-tile-outer {
+  $base-border-color: gainsboro !default;
+  $base-line-height: 1.5em !default;
+  $medium-screen: em(640) !default;
+  $hover-tile-height: 15em;
+  $base-spacing: 1.5em;
+  // margin-bottom: 2rem;
+  border: 1px solid $base-border-color;
+  height: $hover-tile-height;
+  margin-bottom: $base-line-height;
+  
+  @include media($medium-screen) {
+    width: 40%;
+  }
+
+  .hover-tile-container {
+    height: $hover-tile-height;
+    overflow: hidden;
+  }
+
+  .hover-tile-container:hover > .hover-tile {
+    transform: translate(0, -100%);
+  }
+
+  .hover-tile {
+    transition-duration: .75s;
+    transition-timing-function: ease-in-out;
+    background: inherit;
+    color: white;
+    height: inherit;
+    overflow: hidden;
+    padding: $base-spacing;
+  }
+
+  .hover-tile-hidden {
+    background: transparentize(#000, 0.5);
+
+    p {
+      color: transparentize(#fff, 0.3);
+      line-height: $base-line-height;
+    }
+
+    h4 {
+      margin: 0 0 0.5em 0;
+    }
+  }
+}
+
+// Project Hover Tiles end
+
+// Skills section begin
+#skills {
+  clear: both;
+  color: #000;
+  background-color: $content_background_color;
+  // @include outer-container;
+  @include pad(3rem 8rem);
+  padding-top: 5rem;
+  img {
+        height: 130px;
+    }
+    .languageGallery1 {
+      @include row;
+      @include pad();
+      #img1 {
+        @include span-columns(1.5 of 12);
+        @include shift(1.20);
+    } #img2 {
+        @include span-columns(1.5 of 12);
+        @include shift(1.20);
+    } #img3 {
+        @include span-columns(1.5 of 12);
+        @include shift(1.20);
+    } #img4 {
+        @include span-columns(1.5 of 12);
+        @include shift(1.20);
+    }
+    }
+    .languageGallery2 {
+      @include row;
+      @include pad;
+      #img5 {
+        @include span-columns(1.5 of 12);
+        @include shift(2.5);
+    } #img6 {
+        @include span-columns(1.5 of 12);
+        @include shift(1.15);
+    } #img7 {
+        @include span-columns(1.5 of 12);
+        @include shift(1.40);
+    }
+  }
+}
+// Skills section end
+
+// FOOTER begin
+#contact_footer {
+  height: 23rem;
+  @include outer-container;
+  @include pad;
+  padding-top: 3rem;
+    a {
+      color: $link_color; 
+      text-decoration: none;
+    } a:hover {
+        text-decoration: underline;
+    } #mailIcon {
+        height: 1rem;
+        width: 1rem;
+    } #contactImage {
+        height: 14rem;
+        width: 13rem;
+        float: right;
+    } .foot1 {
+      @include span-columns(6);
+    } .foot2 {
+      @include span-columns(5);
+      @include margin(3rem 0 0 0);
+
+    }
+}
+// FOOTER end
+// HOMEPAGE end
+
+
+
+// CONTACT PAGE begin
+#contact_page_container {
+  @include outer-container;
+  @include pad;
+  color: $default_color;
+  padding-top: 5rem;
+  #contact_page_myinfo {
+    @include span-columns(2 of 5);
+    a {
+      color: $link_color;
+    } a:hover {
+        color: $link_color;    
+        text-decoration: underline;
+    }
+  } #contact_form {
+      @include span-columns(7);
+      font-size: 1.1rem;
+      input, textarea {
+        color: #000;
+      } #button {
+          border-radius: 10px;
+          text-transform: uppercase;
+          background-color: $link_color;
+          color: #000;
+          float: right;
+      }
+  } 
+}
+// CONTAGE PAGE end
+
+// PROJECT DESCRIPTION begin
+.side-image {  
+  $base-line-height: 1.5em !default;
+  $action-color: #477DCA !default;
+  $dark-gray: #333 !default;
+  $large-screen: em(860) !default;
+  $base-font-color: $dark-gray !default;
+  $side-image-background-top: #B5EBEB;
+  $side-image-background-bottom: #5DAC5D;
+  $side-image-content-background: #F1F1F1;
+  $side-image-border: 1px solid darken(transparentize($side-image-background-bottom, 0.8), 30%);
+  @include pad;
+
+  background: $side-image-content-background;
+
+  @include media($large-screen) {
+    @include row(table);
+  }
+
+  .images-wrapper {
+    // @include background(url('https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/mountains.png'), linear-gradient($side-image-background-top, $side-image-background-bottom), no-repeat $side-image-background-top scroll);
+    background-image: url('../images/placeholder_billmurray_460x300.jpg');
+    background-color: $side-image-background-top;
+    background-size: cover;
+    border-bottom: $side-image-border;
+    display: block;
+    min-height: 12em;
+    padding: 3em;
+
+    @include media($large-screen) {
+      @include span-columns(4);
+      background-position: bottom;
+      background-size: cover;
+      border-right: $side-image-border;
+    }
+  }
+
+  .side-image-content {
+    @include span-columns(12);
+    padding: 1em 1em 4em 1em;
+
+    @include media($large-screen) {
+      @include span-columns(8);
+      padding: 2em 2em 4em 2em;
+    }
+    p {
+      color: $base-font-color;
+      // line-height: $base-line-height;
+      // margin-bottom: 3em;
+    }
+  }
+
+  @include reset-display();
+}
+
+// PROJECT DESCRIPTION end
+
+
+
+
+
+
+
+
+

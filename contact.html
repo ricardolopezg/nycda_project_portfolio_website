@@ -4,49 +4,48 @@
   <title></title>
   <meta charset="UTF-8">    
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
-  <link rel="stylesheet" type="text/css" href="http://minimalcss.com/minimal.css">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  
+<!-- HEADER -->
   <header>
     <nav>        
       <ul>
-        <li><a href = "index.html">Home</li>
-        <li><a href = "projects.html">Projects</a></li>
-        <li><a href = "index.html#skills">Skills</a></li>
-        <li><a href = "contact.html">Contact</a></li>
+        <li id = "index_nav_link"><a href = "index.html">Home</li>
+        <li id = "projects_nav_link"><a href = "index.html#projects">Portfolio</a></li>
+        <li id = "skills_nav_link"><a href = "index.html#skills">Skills</a></li>
+        <li id = "contact_nav_link"><a href = "#contact">&ltricardolopez&gt;</a></li>
       </ul>
     </nav>
   </header>
-  
-  <article>
-    <div id = "contact">
-      <p class = "sectionTitle">Contact</p>
-      <div id = "contactPageContainer">
-        <p>Fill out the form to reach me directly.<br><br></p>
-        <a href = "mailto:ricardo.lopez.a@gmail.com" target="_top">ricardo.lopez.a@gmail.com<br></a>
-          <form>
-            <label><span>First Name &nbsp&nbsp&nbsp&nbsp&nbsp</span>
-              <input type = "text"><br><br>
-            </label>
-            <label><span>Last Name &nbsp&nbsp&nbsp&nbsp&nbsp</span>
-              <input type = "text"><br><br>
-            </label>
-            <label><span>Email &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-              <input type = "text"><br><br>
-            </label>
-            <label><span>Subject &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-              <input type = "text"><br><br>
-            </label>
-            <label><span>Message &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</span>
-              <input id = "messageInput" type = "text"><br><br>
-            </label>
-            <button>&nbsp&nbsp Send Message &nbsp&nbsp</button>
-          </form>
-      </div>
+
+<!-- CONTACT FORM -->
+  <div id = "contact_page_container">
+    <div id = "contact_page_myinfo">
+      <p class = "sectionTitle">Talk with me</p>
+      <p>Tell me about job, freelance opportunities and anything else on your mind.<br><br>Use the form or send me an email.</p><br>
+      <a href = "mailto:ricardo.lopez.a@gmail.com" target="_top">ricardo.lopez.a@gmail.com<br></a>
     </div>
-  </article>
+    <form id = "contact_form">
+      <label>First Name
+        <input type = "text">
+      
+      <label>Last Name
+        <input type = "text">
+      </label>
+      <label>Email
+        <input type = "text">
+      </label>
+      <label>Subject
+        <input type = "text">
+      </label>
+      <label>Message
+        <textarea rows="5"></textarea>
+      </label>
+      <input type = "submit" id = "button" value = "Send Message"></input>
+    </form>
+  </div>
 
 </body>
 </html>

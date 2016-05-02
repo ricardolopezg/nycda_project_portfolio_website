@@ -4,90 +4,112 @@
   <title></title>
   <meta charset="UTF-8">    
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/3.0.3/normalize.css">
-  <link rel="stylesheet" type="text/css" href="http://minimalcss.com/minimal.css">
-  <link rel="stylesheet" type="text/css" href="styles/main.css">
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  
+<!-- HEADER -->
   <header>
     <nav>        
       <ul>
-        <li><a href = "index.html">Home</li>
-        <li><a href = "#projects">Projects</a></li>
-        <li><a href = "#skills">Skills</a></li>
-        <li><a href = "#contact">Contact</a></li>
+        <li id = "index_nav_link"><a href = "index.html">Home</li>
+        <li id = "projects_nav_link"><a href = "#projects">Portfolio</a></li>
+        <li id = "skills_nav_link"><a href = "#skills">Skills</a></li>
+        <li id = "contact_nav_link"><a href = "#contact_footer">&ltricardolopez&gt;</a></li>
       </ul>
     </nav>
   </header>
-  
-  <article>
+
+<!-- ABOVE FOLD -->
+  <div id = "homepage_container">
     <div id = "intro">
-      <p id = "myName">&ltricardolopez&gt;<br></p>
-      <img src = "images/IMG_4367_transparent_cropped.png">
-      <p>Hi! I am Ricardo and am Full Stack Developer<span class = "lineBreak"></span> based in NYC.</p><br> 
-      <p>My skills are pretty diverse, ranging from HTML, CSS, Ruby, <span class = "lineBreak"></span>Rails to Javascript. Check out my projects below!</p>
+      <div id = "cover_text_container">
+        <p>
+          Hi! I am Ricardo and am Full Stack Developer based in NYC.<br><br>My skills are pretty diverse, ranging from HTML, CSS, Ruby, Rails to Javascript. Check out my projects below!
+        </p>
+      </div>
     </div>
 
-    
+<!-- PROJECTS SECTION -->
     <div id = "projects">
       <p class = "sectionTitle">Projects</p>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/onirim" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
+        <div class="hover-tile-outer hover-tile-outer1">
+          <div class="hover-tile-container">
+            <div class="hover-tile hover-tile-visible"></div>
+              <div class="hover-tile hover-tile-hidden">
+                <h4>Project 1</h4>
+                <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+                <a href = "project-1.html" class = "project_overflow_link project_overflow_link1">See Project</a>
+            </div>
+          </div>
         </div>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/uncharted-waters" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
-        </div>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/bonnemarque" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
-        </div>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/draw-a-better-2016" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
-        </div>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/trefecta" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
-        </div>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/gitman-bros" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
-        </div>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/veintidos-grados" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
-        </div>
-        <div class = "portfolioGallery">
-          <a href = "http://www.awwwards.com/web-design-awards/shape-christmas" target="_blank"><img src = "images/placeholder_billmurray_300x200.jpg"></a>
-          <p>Created HTML and CSS for 1st homework assignment.</p>
-        </div>
+        <div class="hover-tile-outer hover-tile-outer2">
+          <div class="hover-tile-container">
+            <div class="hover-tile hover-tile-visible"></div>
+              <div class="hover-tile hover-tile-hidden">
+                <h4>Project 2</h4>
+                <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit.</p>
+                <a href = "project-2.html" class = "project_overflow_link project_overflow_link2">See Project</a>
+            </div>
+          </div>
+       </div>
+        <div class="hover-tile-outer hover-tile-outer3">
+          <div class="hover-tile-container">
+            <div class="hover-tile hover-tile-visible"></div>
+              <div class="hover-tile hover-tile-hidden">
+                <h4>Project 3</h4>
+                <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit.</p>
+                <a href = "project-3.html" class = "project_overflow_link project_overflow_link3">See Project</a>
+            </div>
+          </div>
+       </div>
+        <div class="hover-tile-outer hover-tile-outer4">
+          <div class="hover-tile-container">
+            <div class="hover-tile hover-tile-visible"></div>
+              <div class="hover-tile hover-tile-hidden">
+                <h4>Project 4</h4>
+                <p>Lorem ipsum dolor provident eligendi fugiat ad exercitationem sit amet, consectetur adipisicing elit. Unde, provident eligendi.</p>
+                <a href = "project-4.html" class = "project_overflow_link project_overflow_link4">See Project</a>
+            </div>
+          </div>
+       </div>
         <a id = "moreProjectsLink" href = "projects.html">View All Projects</p></a>
     </div>
 
 
+<!-- SKILLS SECTION -->
     <div id = "skills">
       <p class = "sectionTitle">Skills</p>
-      <p>Gentrify kinfolk pop-up, butcher readymade microdosing art party shoreditch normcore 8-bit plaid mustache selvage tofu sriracha. Deep v vice twee meditation, pabst readymade photo booth pickled sustainable seitan iPhone synth. Beard farm-to-table kombucha, twee raw denim selfies semiotics mlkshk pork belly pickled bicycle rights. Mlkshk four dollar toast raw denim, trust fund master cleanse etsy bushwick wolf. Vinyl brunch salvia hoodie yuccie, pork belly four loko. Franzen portland kogi cliche blue bottle organic. +1 seitan tumblr, stumptown hoodie humblebrag XOXO chambray.<br><br><br><br></p>
-      <div class = "languageGallery">
-          <img id = "img1" src = "images/program_languages_logos/html5_logo_white.png">
+      <p>Gentrify kinfolk pop-up, butcher readymade microdosing art party shoreditch normcore 8-bit plaid mustache selvage tofu sriracha. Deep v vice twee meditation, pabst readymade photo booth pickled sustainable seitan iPhone synth. Beard farm-to-table kombucha, twee raw denim selfies semiotics mlkshk pork belly pickled bicycle rights. Mlkshk four dollar toast raw denim, trust fund master cleanse etsy bushwick wolf. Vinyl brunch salvia hoodie yuccie, pork belly four loko. Franzen portland kogi cliche blue bottle organic. +1 seitan tumblr, stumptown hoodie humblebrag XOXO chambray.<br><br></p>
+      <div class = "languageGallery1">
+          <img id = "img1" src = "images/program_languages_logos/html5_logo.png">
           <img id = "img2" src = "images/program_languages_logos/css_logo.png">
-          <img id = "img3" src = "images/program_languages_logos/javascript_logo.png">
-          <img id = "img4" src = "images/program_languages_logos/sass_logo.png">
-          <img id = "img5" src = "images/program_languages_logos/rails_logo.svg">
-          <img id = "img6" src = "images/program_languages_logos/ruby_logo.png">
-          <img id = "img7" src = "images/program_languages_logos/jquery_logo_white.png">
+          <img id = "img3" src = "images/program_languages_logos/sass_logo.png">
+          <img id = "img4" src = "images/program_languages_logos/javascript_logo.png">
+      </div>
+      <div class = "languageGallery2">
+          <img id = "img5" src = "images/program_languages_logos/ruby_logo.png">
+          <img id = "img6" src = "images/program_languages_logos/rails_logo.svg">
+          <img id = "img7" src = "images/program_languages_logos/jquery_logo_vert.png">
       </div>
     </div>
-  </article>
-
-  <footer id = "contact">
+  </div>
+  
+<!-- FOOTER -->
+  <footer id = "contact_footer">
+    <div class = "foot1">
     <p class = "sectionTitle">Contact</p>
-    <p>For freelance contracts or hiring opportunities, get in touch.<br><br></p>
-    <a href = "mailto:ricardo.lopez.a@gmail.com" target="_top"><img id = "mailIcon" src = "images/mail.png"> ricardo.lopez.a@gmail.com <img id = "mailIcon" src = "images/mail.png"><br></a>
-    <a href = "contact.html"><img id = "contactImage" src = "images/form_icon.png">
+      <p>For freelance contracts or hiring opportunities, click the form to get in touch.<br><br></p>
+      <img id = "mailIcon" src = "images/mail.png">
+      <a href = "mailto:ricardo.lopez.a@gmail.com" target="_top"> ricardo.lopez.a@gmail.com</a>
+      <img id = "mailIcon" src = "images/mail.png"><br>
+    </div>
+    <div class = "foot2">
+      <a href = "contact.html"><img id = "contactImage" src = "images/form_icon.png">
+    </div>
   </footer>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src = "scripts/scripts.js"></script>
 </body>
 </html>
